@@ -1,0 +1,777 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+/* _____________________________________________________ОБНУЛЕНИЕ ЗАКОНЧЕНО____________________________________ */
+
+/* _____________________________________________________Start header__________________________________________ */
+
+.fon_tit {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+header {
+  max-height: 100%;
+  align-items: center;
+  overflow: hidden;
+}
+.fon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-rows: 1fr 10fr;
+  position: relative;
+}
+
+.logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  padding-top: 8%;
+}
+.menu {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 5%;
+}
+.menu_text {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 8%;
+}
+.menu_text:hover,
+.menu_text:active,
+.menu_text:focus {
+  color: #1b7dff;
+}
+
+.menu_but {
+  grid-column: 3;
+  grid-row: 1/2;
+  margin-top: 8%;
+  margin-left: 2%;
+  width: 136px;
+  height: 44px;
+  border: 1.5px solid #df2f26;
+  box-sizing: border-box;
+  border-radius: 85px;
+  background: transparent;
+}
+
+.but_text {
+  font-size: 18px;
+  color: #fff;
+}
+.menu_but:hover,
+.menu_but:active,
+.menu_but:focus {
+  background: blue;
+  border: 1.5px solid blue;
+}
+
+.contact_grid {
+  grid-column: 2/3;
+  justify-self: center;
+  grid-row: 2;
+  padding-top: 65%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.con1 {
+  grid-column: 1/2;
+  width: 155px;
+  height: 65px;
+}
+.con2 {
+  grid-column: 2/3;
+  width: 330px;
+  height: 60px;
+  margin-top: 3px;
+}
+.con3 {
+  grid-column: 3/4;
+  width: 225px;
+  height: 45px;
+  margin-top: 17px;
+}
+
+.head_stl {
+  grid-column: 2/3;
+  grid-row: 2;
+  padding-top: 78%;
+  justify-self: center;
+}
+
+/* _____________________________________________________End header__________________________________________ */
+/* _____________________________________________________Первый блок START__________________________________________ */
+
+.blok1 {
+  max-width: 100%;
+  height: 775px;
+  background: #06081f;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.5fr 5fr 1.5fr;
+  position: relative;
+}
+
+.blok1_grid {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  color: #fff;
+}
+
+.h1_blok1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: start;
+  font-size: 64px;
+  text-decoration: bold;
+  margin-top: 3%;
+}
+.blo1_text1,
+.blo1_text2,
+.blo1_text3 {
+  display: grid;
+  grid-template-columns: 0.1fr 2.5fr 1fr;
+  align-self: start;
+  grid-template-rows: 1fr 1fr;
+}
+
+.h2_blok1 {
+  font-size: 48px;
+  text-decoration: bold;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.h3_blok1 {
+  font-size: 24px;
+  grid-column: 2/3;
+  grid-row: 1/1;
+  margin-left: 10px;
+}
+
+.text_blok1 {
+  font-size: 16px;
+  grid-column: 1/3;
+  align-self: center;
+  grid-row: 2/3;
+  border-top: 1px solid rgba(255, 255, 255, 0.17);
+  padding-top: 10px;
+}
+
+.blog1_grid2 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5%;
+}
+
+.blo1_text1 {
+  grid-column: 1/2;
+}
+.blo1_text2 {
+  grid-column: 2/3;
+}
+
+.blo1_text3 {
+  grid-column: 3/4;
+  justify-self: end;
+}
+
+.krugmin3 {
+  border-radius: 50%;
+  background: radial-gradient(
+    47.22% 47.22% at 50% 50%,
+    rgba(0, 71, 255, 0.62) 0%,
+    rgba(0, 71, 255, 0) 100%
+  );
+  width: 565px;
+  height: 565px;
+  position: absolute;
+  z-index: 0;
+  right: 80%;
+  top: 55%;
+}
+
+/* _____________________________________________________Первый блок END__________________________________________ */
+/* _____________________________________________________Второй блок START__________________________________________ */
+
+.blok2 {
+  max-width: 100%;
+  height: 557px;
+  background: #06081f;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  position: relative;
+}
+.blok2_grid {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #fff;
+}
+
+.karta_grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 5fr;
+  grid-row: 1/2;
+  margin-left: 20%;
+}
+.zif_grid {
+  grid-column: 1/2;
+  font-size: 80px;
+}
+.tet_grid {
+  grid-column: 2/3;
+  font-size: 18px;
+  align-self: START;
+  padding-top: 5%;
+}
+.h1_blok2 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  font-size: 48px;
+  justify-self: start;
+  padding-left: 10%;
+  padding-top: 15%;
+}
+
+.sil {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+}
+.karta1 {
+  grid-column: 2/3;
+}
+
+.karta2 {
+  grid-column: 3/4;
+}
+
+.niz_2kart {
+  padding-top: 30%;
+}
+
+.button_blok2 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  border-top: 10px;
+  align-self: end;
+  justify-self: center;
+  margin-left: 40%;
+  margin-bottom: 10%;
+}
+.menu_but2 {
+  margin-bottom: 20%;
+  width: 348px;
+  height: 70px;
+  border: 1.5px solid #df2f26;
+  box-sizing: border-box;
+  border-radius: 85px;
+  background: transparent;
+}
+
+.menu_but2:hover,
+.menu_but2:active,
+.menu_but2:focus {
+  background: blue;
+  border: 1.5px solid blue;
+}
+
+.sil:hover,
+.sil:active,
+.sil:focus {
+  color: blue;
+}
+.krugmin2 {
+  border-radius: 50%;
+  background: radial-gradient(
+    47.22% 47.22% at 50% 50%,
+    rgba(0, 71, 255, 0.62) 0%,
+    rgba(0, 71, 255, 0) 100%
+  );
+  width: 565px;
+  height: 565px;
+  position: absolute;
+  z-index: 0;
+  left: 80%;
+  top: 50%;
+}
+
+.krugmin4 {
+  border-radius: 50%;
+  background: radial-gradient(
+    47.22% 47.22% at 50% 50%,
+    rgba(0, 71, 255, 0.62) 0%,
+    rgba(0, 71, 255, 0) 100%
+  );
+  width: 565px;
+  height: 565px;
+  position: absolute;
+  z-index: 0;
+  right: 80%;
+  bottom: 65%;
+}
+.but_text2 {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* _____________________________________________________Второй блок END__________________________________________ */
+
+/* _____________________________________________________Третий блок START__________________________________________ */
+
+.blok3 {
+  max-width: 100%;
+  height: 900px;
+  background: #06081f;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  background: #121535;
+}
+
+.blok3_left {
+  grid-column: 1/2;
+  color: #fff;
+  align-self: center;
+  padding: 0% 10% 10% 15%;
+  margin-bottom: 5%;
+}
+
+.h1_blok3 {
+  font-size: 64px;
+  text-transform: bold;
+  margin-bottom: 33px;
+}
+.text_blok3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 66px;
+  max-width: 508px;
+  max-height: 323px;
+}
+
+.h2_blok3 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.adm_blok3 {
+  font-size: 16px;
+}
+
+.blok3_right {
+  grid-column: 2/3;
+}
+
+.adm_blok3 {
+  width: 100%;
+  height: 100%;
+}
+
+/* _____________________________________________________Третий блок END__________________________________________ */
+/* _____________________________________________________Четвертый блок START________________________________________ */
+
+.blok4 {
+  max-width: 100%;
+  height: 1053px;
+  background: #06081f;
+  color: #fff;
+}
+.blok4_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  overflow: hidden;
+}
+
+.h1_bloh4 {
+  grid-column: 1/3;
+  justify-self: center;
+  grid-row: 1/6;
+  text-align: center;
+  font-size: 48px;
+  line-height: 64px;
+  max-width: 500px;
+  align-self: start;
+  margin-top: 146px;
+}
+
+.img_blok4 {
+  grid-column: 1/2;
+  grid-row: 1/6;
+  padding-top: 447px;
+  justify-self: end;
+}
+
+.text_blok4 {
+  grid-column: 2/3;
+  grid-row: 1/6;
+  align-self: start;
+  padding-top: 550px;
+  padding-left: 10%;
+}
+
+.h2_blok4 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.tet_blok4 {
+  font-size: 20px;
+  line-height: 36px;
+  max-width: 437px;
+  padding-top: 5%;
+}
+
+/* _____________________________________________________Четвертый блок END__________________________________________ */
+/* _____________________________________________________Пятый блок START__________________________________________ */
+
+.blok5 {
+  max-width: 100%;
+  height: 1519px;
+  background: #06081f;
+  color: #fff;
+}
+.blok5_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+}
+
+.h1_blok5 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 48px;
+  line-height: 56px;
+  max-width: 350px;
+  align-self: center;
+  justify-self: center;
+  padding-left: 1%;
+}
+.tet_blok5 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 20px;
+  line-height: 36px;
+  max-width: 350px;
+  padding-top: 5%;
+  align-self: center;
+  justify-self: center;
+  padding-left: 1%;
+  padding-top: 270px;
+}
+.img_blok5 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-items: start;
+  align-self: center;
+  padding-top: 10%;
+  margin-left: -10%;
+}
+
+.h1_blok5_2 {
+  grid-column: 2/3;
+  align-self: center;
+  font-size: 48px;
+  line-height: 56px;
+  max-width: 350px;
+  grid-row: 2/2;
+  padding-left: 10%;
+}
+.tet_blok5_2 {
+  grid-column: 2/3;
+  align-self: center;
+  font-size: 20px;
+  line-height: 36px;
+  max-width: 400px;
+  grid-row: 2/2;
+  padding-top: 270px;
+  padding-left: 10%;
+}
+.img_blok5_2 {
+  grid-column: 1/2;
+  align-self: end;
+  justify-self: end;
+  padding-top: 30%;
+  grid-row: 2/2;
+}
+
+/* _____________________________________________________Пятый блок END__________________________________________ */
+/* _____________________________________________________Шестой блок END__________________________________________ */
+
+.blok6 {
+  max-width: 100%;
+  height: 900px;
+}
+
+.blok6_grid {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  overflow: hidden;
+}
+
+.text_blok6 {
+  grid-column: 1/2;
+  justify-self: start;
+  margin-left: 15%;
+  grid-row: 2/5;
+  margin-top: 45%;
+  max-width: 600px;
+}
+.p_blok6 {
+  align-self: center;
+  position: relative;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.butt_blok6 {
+  grid-column: 1/2;
+  justify-self: start;
+  margin-left: 15%;
+  position: relative;
+  color: #fff;
+  width: 238px;
+  height: 70px;
+  border: 1.5px solid #df2f26;
+  box-sizing: border-box;
+  border-radius: 85px;
+  background: #df2f26;
+  margin-top: 5%;
+}
+
+.butt_blok6:hover,
+.butt_blok6:active,
+.butt_blok6:focus {
+  background: blue;
+  border: 1.5px solid blue;
+}
+
+.but_text2 {
+  font-size: 18px;
+  line-height: 64px;
+}
+
+.blok6_img {
+  grid-column: 1/2;
+}
+
+.adm_blok6 {
+  width: 100%;
+  height: 900px;
+  position: absolute;
+}
+
+/* _____________________________________________________Шестой блок END__________________________________________ */
+/* _____________________________________________________Седьмой блок START__________________________________________ */
+
+.blok7 {
+  max-width: 100%;
+  max-height: 790px;
+  overflow: hidden;
+}
+
+.blok7_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  color: #fff;
+}
+
+.blok7_left {
+  grid-column: 1/2;
+  position: relative;
+  align-self: center;
+  padding-left: 15%;
+  padding-top: 15%;
+}
+
+.h1_blok7 {
+  font-size: 48px;
+  line-height: 64px;
+}
+.p_blok7 {
+  font-size: 20px;
+  line-height: 36px;
+  max-width: 500px;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.p2_blok7 {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 2%;
+}
+
+.img1_blok7 {
+  padding-right: 2%;
+}
+
+.img2_blok7:hover,
+.img2_blok7:active,
+.img2_blok7:focus {
+  /* Найти значение затемнение */
+}
+.img1_blok7:hover,
+.img1_blok7:active,
+.img1_blok7:focus {
+  /* Найти значение затемнение */
+}
+
+.blok7_right {
+  padding-left: 15%;
+  padding-top: 25%;
+  position: relative;
+}
+
+.img0_blok7 {
+  position: absolute;
+  width: 100%;
+  height: 790px;
+}
+
+/* _____________________________________________________Седьмой блок END__________________________________________ */
+/* _____________________________________________________Footer блок START__________________________________________ */
+
+.footer {
+  max-width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #06081f;
+}
+
+.fot_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  color: #fff;
+  margin-top: 120px;
+}
+
+.h1_fot {
+  grid-column: 1/2;
+  font-size: 24px;
+  line-height: 48px;
+  padding-left: 30%;
+  position: relative;
+}
+
+.add_fot {
+  grid-column: 2/3;
+  position: relative;
+}
+
+.add_text {
+  font-size: 24px;
+  line-height: 32px;
+  position: relative;
+}
+.add_non {
+  font-size: 16;
+  line-height: 24px;
+  position: relative;
+}
+
+/* _____________________________________________________Footer блок END__________________________________________ */
